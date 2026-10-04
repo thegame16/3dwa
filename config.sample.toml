@@ -1,0 +1,30 @@
+[strategy]
+symbol = "BTCUSD"
+timeframe = "M1"
+breakout_lookback = 8
+momentum_threshold = 10.0
+imbalance_threshold = 0.05
+take_profit_multiple = 1.6
+stop_loss_multiple = 1.0
+max_hold_bars = 6
+
+[risk]
+fallback_equity_usd = 10000.0
+risk_per_trade_fraction = 0.005
+max_volume_lots = 2.0
+max_daily_loss_fraction = 0.03
+max_consecutive_losses = 3
+use_live_equity = true
+
+[mt5]
+path = "C:/Program Files/MetaTrader 5/terminal64.exe"
+login = 12345678
+password = "replace-me"
+server = "YourBroker-Server"
+magic = 22042026
+deviation_points = 20
+poll_interval_seconds = 0.5
+reconnect_delay_seconds = 5.0
+allow_short = true
+close_on_shutdown = false
+comment = "BTCUSD Sniper V2"
